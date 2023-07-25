@@ -10,4 +10,9 @@ export class MyFirstCompComponent {
   name: string = '';
   email: string = '';
   message: string = '';
+  protected readonly onsubmit = onsubmit;
+
+  onSubmit() {
+    console.log(this.name);
+  }
 }
